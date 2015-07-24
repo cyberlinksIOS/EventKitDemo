@@ -21,6 +21,11 @@
 		C0062F3B1970321800B71762 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0062F1D1970321800B71762 /* UIKit.framework */; };
 		C0062F431970321800B71762 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0062F411970321800B71762 /* InfoPlist.strings */; };
 		C0062F451970321800B71762 /* EventKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0062F441970321800B71762 /* EventKitDemoTests.m */; };
+		C0062F4F1970323600B71762 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0062F4E1970323600B71762 /* EventKit.framework */; };
+		C0062F521970354A00B71762 /* CalendarsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0062F511970354A00B71762 /* CalendarsViewController.m */; };
+		C0062F551970380600B71762 /* EditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0062F541970380600B71762 /* EditEventViewController.m */; };
+		C0062F581970392C00B71762 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0062F571970392C00B71762 /* DatePickerViewController.m */; };
+		C0062F5B1970472500B71762 /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0062F5A1970472500B71762 /* EventManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		C0062F401970321800B71762 /* EventKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventKitDemoTests-Info.plist"; sourceTree = "<group>"; };
 		C0062F421970321800B71762 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0062F441970321800B71762 /* EventKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventKitDemoTests.m; sourceTree = "<group>"; };
+		C0062F4E1970323600B71762 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		C0062F501970354A00B71762 /* CalendarsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarsViewController.h; sourceTree = "<group>"; };
+		C0062F511970354A00B71762 /* CalendarsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarsViewController.m; sourceTree = "<group>"; };
+		C0062F531970380600B71762 /* EditEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditEventViewController.h; sourceTree = "<group>"; };
+		C0062F541970380600B71762 /* EditEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditEventViewController.m; sourceTree = "<group>"; };
+		C0062F561970392C00B71762 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		C0062F571970392C00B71762 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		C0062F591970472500B71762 /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
+		C0062F5A1970472500B71762 /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0062F4F1970323600B71762 /* EventKit.framework in Frameworks */,
 				C0062F1C1970321800B71762 /* CoreGraphics.framework in Frameworks */,
 				C0062F1E1970321800B71762 /* UIKit.framework in Frameworks */,
 				C0062F1A1970321800B71762 /* Foundation.framework in Frameworks */,
@@ -101,6 +116,7 @@
 		C0062F181970321800B71762 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0062F4E1970323600B71762 /* EventKit.framework */,
 				C0062F191970321800B71762 /* Foundation.framework */,
 				C0062F1B1970321800B71762 /* CoreGraphics.framework */,
 				C0062F1D1970321800B71762 /* UIKit.framework */,
@@ -112,11 +128,19 @@
 		C0062F1F1970321800B71762 /* EventKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C0062F591970472500B71762 /* EventManager.h */,
+				C0062F5A1970472500B71762 /* EventManager.m */,
 				C0062F281970321800B71762 /* AppDelegate.h */,
 				C0062F291970321800B71762 /* AppDelegate.m */,
 				C0062F2B1970321800B71762 /* Main.storyboard */,
 				C0062F2E1970321800B71762 /* ViewController.h */,
 				C0062F2F1970321800B71762 /* ViewController.m */,
+				C0062F501970354A00B71762 /* CalendarsViewController.h */,
+				C0062F511970354A00B71762 /* CalendarsViewController.m */,
+				C0062F531970380600B71762 /* EditEventViewController.h */,
+				C0062F541970380600B71762 /* EditEventViewController.m */,
+				C0062F561970392C00B71762 /* DatePickerViewController.h */,
+				C0062F571970392C00B71762 /* DatePickerViewController.m */,
 				C0062F311970321800B71762 /* Images.xcassets */,
 				C0062F201970321800B71762 /* Supporting Files */,
 			);
@@ -249,8 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0062F521970354A00B71762 /* CalendarsViewController.m in Sources */,
 				C0062F301970321800B71762 /* ViewController.m in Sources */,
 				C0062F2A1970321800B71762 /* AppDelegate.m in Sources */,
+				C0062F551970380600B71762 /* EditEventViewController.m in Sources */,
+				C0062F581970392C00B71762 /* DatePickerViewController.m in Sources */,
+				C0062F5B1970472500B71762 /* EventManager.m in Sources */,
 				C0062F261970321800B71762 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +484,7 @@
 				C0062F4A1970321800B71762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0062F4B1970321800B71762 /* Build configuration list for PBXNativeTarget "EventKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +493,7 @@
 				C0062F4D1970321800B71762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EditEventViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <EditEventViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tblEvents;
+
+
+- (IBAction)showCalendars:(id)sender;
+
+- (IBAction)createEvent:(id)sender;
 
 @end
